@@ -4,13 +4,13 @@
 using namespace std;
 
 int main(){
-    string foreName;
-    string lastName;
+    int num1;
+    int num2;
 
-    cout << "Enter your forename:";
-    getline(cin,foreName);
-    cout << "Enter your lastname:";
-    getline(cin,lastName);
-    cout << "Your name is " << lastName << ", " << foreName;
+    cout << "Enter number 1:";
+    cin >> num1; 
+    cout << "Enter number 2:";
+    cin >> num2; 
+    cout << "The sum of " << num1 << " and " << num2 << " is " << num1+num2;
     return 0;
 }
