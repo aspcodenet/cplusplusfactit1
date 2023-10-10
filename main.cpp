@@ -4,11 +4,16 @@
 using namespace std;
 
 int main(){
-    int amount;
+    int totalMinutes;
 
-    cout << "Enter amount:";
-    cin >> amount; 
+    cout << "Enter minutes:";
+    cin >> totalMinutes; 
 
-    cout << "With VAT " << amount * 1.25 << endl;
+    int hours = totalMinutes / 60; 
+    //int minutes = totalMinutes - (hours*60);
+    int minutes = totalMinutes % 60;
+
+    cout << "Hours:" << hours << endl << "Minutes:" << minutes << endl;
+
     return 0;
 }
