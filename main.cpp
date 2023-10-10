@@ -4,15 +4,11 @@
 using namespace std;
 
 int main(){
-    int num1;
-    int num2;
+    int amount;
 
-    cout << "Enter number 1:";
-    cin >> num1; 
-    cout << "Enter number 2:";
-    cin >> num2; 
-    cout << "The sum of " << num1 << " and " << num2 << " is " << num1+num2 << endl;
-    cout << "The difference of " << num1 << " and " << num2 << " is " << num1-num2 << endl;
-    cout << "The average of " << num1 << " and " << num2 << " is " << (num1+num2)/2.0 << endl;
+    cout << "Enter amount:";
+    cin >> amount; 
+
+    cout << "With VAT " << amount * 1.25 << endl;
     return 0;
 }
