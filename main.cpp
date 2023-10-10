@@ -1,16 +1,16 @@
 #include <iostream>
 #include <iomanip>
 #include <float.h>
+#include <ctime>
 using namespace std;
 
 int main(){
-    int num1;
-    int num2;
+    int birthYear;
+    std::time_t t = std::time(nullptr);
+    std::tm *const pTInfo = std::localtime(&t);
 
-    cout << "Enter number 1:";
-    cin >> num1; 
-    cout << "Enter number 2:";
-    cin >> num2; 
-    cout << "The sum of " << num1 << " and " << num2 << " is " << num1+num2;
+    cout << "Enter birthyear:";
+    cin >> birthYear; 
+    cout << "You are " << 1900 + pTInfo->tm_year - birthYear << " years";
     return 0;
 }
