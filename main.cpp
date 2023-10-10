@@ -2,15 +2,14 @@
 using namespace std;
 
 int main(){
-    // cout << "Hello my name is Stefan" << endl;
-    // cout << "Testgatan 12" << endl;
-    // cout << "111 22  Teststad" << endl;
-
-    // 12 + 15
-    // 12 + 15 + 99
-    cout    << "Hello my name is Stefan" << endl   
-            << "Testgatan 12" << endl 
-            << "111 22  Teststad" << endl;
+    int price, nights;
+    cout    << "How much does it cost per night:";
+    cin >> price;
+    cout    << "How many nights:";
+    cin >> nights;
+    //int totalPrice = price * nights;
+    //cout    << "Total price:" << totalPrice << endl;
+    cout    << "Total price:" << price * nights  << endl;
 
     return 0;
 }
